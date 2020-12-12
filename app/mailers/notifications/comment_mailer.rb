@@ -5,6 +5,6 @@ class Notifications::CommentMailer < ApplicationMailer
     @bookmark = params[:comment]&.bookmark&.only_first
     @user     = params[:comment]&.user
     @record   = params[:record]
-    mail(to: params[:recipient].email, subject: "You have new comment in hackershare")
+    mail(to: params[:recipient].email, subject: "You have new comment in cgsave")
   end
 end

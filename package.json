@@ -1,5 +1,5 @@
 {
-  "name": "hackershare",
+  "name": "cgsave",
   "private": true,
   "scripts": {
     "start": "./bin/webpack-dev-server"

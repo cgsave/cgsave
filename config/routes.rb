@@ -100,7 +100,7 @@ Rails.application.routes.draw do
       collection do
         get :setting
         put :update_setting
-        get :top_hackers
+        get :top_users
       end
     end
     get "about", to: "home#about"

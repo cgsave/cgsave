@@ -4,7 +4,7 @@ require "sitemap_generator"
 # SitemapGenerator::Interpreter.send :include, RoutingHelper
 SitemapGenerator::Sitemap.create_index = :auto
 
-SitemapGenerator::Sitemap.default_host = "https://hackershare.dev"
+SitemapGenerator::Sitemap.default_host = "https://cgsave.com"
 # SitemapGenerator::Sitemap.public_path = "public/sitemap"
 
 SitemapGenerator::Sitemap.sitemaps_path = "sitemap/"

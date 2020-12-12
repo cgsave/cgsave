@@ -1,7 +1,7 @@
 en:
   about: About
   admin: Admin Console
-  active_hackers: Active Hackers
+  active_users: Active Users
   all: All
   all_lang: All languages
   already_have_account?: Already have account?
@@ -38,7 +38,7 @@ en:
   follower_users: Followers
   followings: Followings
   hackers: Hackers
-  hackershare: Hackershare
+  cgsave: CGSave
   install: Install
   install_the_chrome_extension: Install the Chrome extension
   issue_last: Last Issue
@@ -87,7 +87,7 @@ en:
   tag_subscription: Tag subscription
   tagging: Tagging
   this_information_will_be_displayed_publicly_so_be_careful_what_you_share: This information will be displayed publicly so be careful what you share
-  top_hackers: Top Hackers
+  top_users: Top Users
   top_categories: Top Subscriptions
   unfollow: Unfollow
   user_profile: User's Profile

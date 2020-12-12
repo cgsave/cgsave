@@ -5,7 +5,7 @@ Rails.application.routes.default_url_options[:host] = if Rails.env.development?
 elsif Rails.env.test?
   "localhost:3000"
 elsif Rails.env.production?
-  "hackershare.dev"
+  "cgsave.com"
 end
 
 # NOTICE: http://lulalala.logdown.com/posts/5835445-rails-many-default-url-options

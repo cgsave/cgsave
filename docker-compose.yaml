@@ -33,14 +33,14 @@ services:
       - webpack
       - sidekiq
     ports:
-      - 3000:3000
+      - 4000:4000
     env_file: .env
     environment:
       - WEBPACKER_DEV_SERVER_HOST=webpack
       - NODE_ENV=development
       - RAILS_ENV=development
     entrypoint: docker/entrypoints/rails.sh
-    command: ["bundle", "exec", "rails", "s", "-p", "3000", "-b", "0.0.0.0"]
+    command: ["bundle", "exec", "rails", "s", "-p", "4000", "-b", "0.0.0.0"]
 
   sidekiq:
     <<: *base
@@ -88,9 +88,9 @@ services:
     volumes:
       - postgres:/data/postgres
     environment:
-      - POSTGRES_DB=hackershare_dev
+      - POSTGRES_DB=cgsave_dev
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_PASSWORD=huanggaoqiubd0829
 
   redis:
     image: redis:alpine

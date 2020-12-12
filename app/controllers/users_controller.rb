@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:hover, :show, :index, :top_hackers]
+  skip_before_action :authenticate_user!, only: [:hover, :show, :index, :top_users]
   before_action :set_user, only: %i[show]
 
   def show
@@ -47,8 +47,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def top_hackers
-    render partial: "top_hackers"
+  def top_users
+    render partial: "top_users"
   end
 
   def hover

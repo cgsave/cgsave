@@ -7,14 +7,14 @@
 set :rails_env, :production
 set :migrate_env, :production
 set :sitemap_roles, :web
-server "hackershare.dev", user: "ubuntu", roles: %w{app db web}
+server "cgsave.com", user: "ubuntu", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-set :nginx_server_name, ".hackershare.dev"
+set :nginx_server_name, ".cgsave.com"
 set :nginx_use_ssl, true
-set :nginx_ssl_certificate, "/etc/letsencrypt/live/hackershare.dev/fullchain.pem"
-set :nginx_ssl_certificate_key, "/etc/letsencrypt/live/hackershare.dev/privkey.pem"
+set :nginx_ssl_certificate, "/etc/letsencrypt/live/cgsave.com/fullchain.pem"
+set :nginx_ssl_certificate_key, "/etc/letsencrypt/live/cgsave.com/privkey.pem"
 
 # role-based syntax
 # ==================

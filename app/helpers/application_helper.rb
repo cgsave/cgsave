@@ -123,9 +123,9 @@ module ApplicationHelper
 
   def feedback_link
     if I18n.locale == :'zh-CN'
-      "https://cdn.hackershare.cn/wechat-hackershare.jpeg"
+      "https://cdn.cgsave.com/wechat-cgsave.jpeg"
     else
-      "https://github.com/hackershare/hackershare/issues/new"
+      "https://github.com/cgsave/cgsave/issues/new"
     end
   end
 end

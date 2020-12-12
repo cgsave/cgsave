@@ -3,8 +3,8 @@
 # config valid only for current version of Capistrano
 lock "~> 3.14.1"
 
-set :application, "hackershare"
-set :repo_url, "https://github.com/hackershare/hackershare.git"
+set :application, "cgsave"
+set :repo_url, "https://github.com/cgsave/cgsave.git"
 
 set :assets_roles, [:app]
 
@@ -13,7 +13,7 @@ set :assets_roles, [:app]
 # set :branch, fetch(:stage)
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/var/www/hackershare"
+set :deploy_to, "/var/www/cgsave"
 set :rvm_ruby_version, File.read(".ruby-version").strip
 set :rvm_custom_path, "/usr/share/rvm"  # only needed if not detected
 

@@ -12,7 +12,7 @@
 // const imagePath = (name) => images(name, true)
 require("channels")
 
-import "hackershare"
+import "cgsave"
 import "controllers"
 
 

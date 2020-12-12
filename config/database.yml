@@ -11,7 +11,7 @@ default: &default
 development:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: hackershare_dev
+  database: cgsave_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -46,7 +46,7 @@ development:
 test:
   <<: *default
   url: <%= ENV['DATABASE_TEST_URL'] %>
-  database: hackershare_test
+  database: cgsave_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

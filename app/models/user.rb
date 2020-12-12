@@ -35,8 +35,8 @@
 #  index_users_on_updated_at          (updated_at)
 #
 class User < ApplicationRecord
-  RSS_BOT_NAME  = "hackershare"
-  RSS_BOT_EMAIL = "robot@hackershare.dev"
+  RSS_BOT_NAME  = "cgsave"
+  RSS_BOT_EMAIL = "robot@cgsave.com"
   has_secure_password
   has_one_attached :avatar
   has_many :auth_providers, dependent: :destroy

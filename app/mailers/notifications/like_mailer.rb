@@ -5,6 +5,6 @@ class Notifications::LikeMailer < ApplicationMailer
     @bookmark = params[:like]&.bookmark&.only_first
     @user     = params[:like]&.user
     @record   = params[:record]
-    mail(to: params[:recipient].email, subject: "Your bookmark has a new favorite in hackershare")
+    mail(to: params[:recipient].email, subject: "Your bookmark has a new favorite in cgsave")
   end
 end

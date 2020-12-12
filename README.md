@@ -1,11 +1,11 @@
-# Hackershare
+# CGSave
 
-[中文](https://github.com/hackershare/hackershare/blob/master/README_cn.md)
+[中文](https://github.com/cgsave/cgsave/blob/master/README_cn.md)
 
-Social bookmarks website for hackers. Alternative to delicious, hackernews, pocket. 
-Hackershare is the open source software which powers [hackershare.dev](https://hackershare.dev)
+Social bookmarks website for cgers. Alternative to delicious, cgnews, pocket. 
+cgsave is the open source software which powers [cgsave.com](https://cgsave.com)
 
-[![CI](https://github.com/hackershare/hackershare/workflows/CI/badge.svg)](https://github.com/hackershare/hackershare/actions)
+[![CI](https://github.com/cgsave/cgsave/workflows/CI/badge.svg)](https://github.com/cgsave/cgsave/actions)
 
 ## Dependency
 
@@ -20,7 +20,7 @@ Hackershare is the open source software which powers [hackershare.dev](https://h
 
 ## Setup local
 
-* [PG extension install](https://github.com/hackershare/hackershare/blob/master/pg_extension.md)
+* [PG extension install](https://github.com/cgsave/cgsave/blob/master/pg_extension.md)
 * rails db:create
 * rails db:migrate
 * rails db:seed_fu
@@ -33,8 +33,8 @@ Hackershare is the open source software which powers [hackershare.dev](https://h
 
 ## chrome extension
 
-* https://github.com/hackershare/hackershare-ext
-* https://chrome.google.com/webstore/detail/hackershare/pinmchdpdbjbhijbagmealcojjpeebmh
+* https://github.com/cgsave/cgsave-ext
+* https://chrome.google.com/webstore/detail/cgsave/pinmchdpdbjbhijbagmealcojjpeebmh
 
 ## refresh sitemap
 
