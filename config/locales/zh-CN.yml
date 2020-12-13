@@ -16,6 +16,7 @@ zh-CN:
   bookmarks: 书签
   unsubscribe: 取消订阅
   category: 订阅
+  cgsave: CGSave
   chrome_extension_description: 使用 Chrome 插件，你只需单击插件即可分享。
   comment: 评论
   comment_added: 评论已添加
@@ -38,7 +39,6 @@ zh-CN:
   follower_users: 关注者
   followings: 关注人的分享
   hackers: 极客
-  cgsave: CGer分享
   install: 安装
   install_the_chrome_extension: 安装 Chrome 插件
   issue_last: 上一期
@@ -94,7 +94,7 @@ zh-CN:
   weekly: 每周
   weekly_selection: 每周精选
   weekly_selection_describe: 订阅每周精选
-  weekly_selection_hint: 精选书签为用户分享，再根据书签质量以及热度每周精选 5 条出来。请关注我们运营的公众号，及时获得推送。
+  weekly_selection_hint: 精选书签为用户分享，再根据书签质量以及热度每周精选 5 条出来。您可关注本站的公众号，及时获得推送。
   write_a_few_sentences_about_yourself: 简单介绍一下你自己。
   your_profile_updated_successfully: 你的资料更新成功。
 

@@ -16,6 +16,7 @@ en:
   bookmarks: Bookmarks
   unsubscribe: Unsubscribe
   category: Subscriptions
+  cgsave: CGSave
   chrome_extension_description: With the extension, you can add new bookmarks with the click of a button.
   comment: Comment
   comment_added: Comment added
@@ -38,7 +39,6 @@ en:
   follower_users: Followers
   followings: Followings
   hackers: Hackers
-  cgsave: CGSave
   install: Install
   install_the_chrome_extension: Install the Chrome extension
   issue_last: Last Issue

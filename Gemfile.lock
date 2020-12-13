@@ -438,6 +438,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux-musl
 
 DEPENDENCIES
   actionview (>= 6.0.3.3)
@@ -498,4 +499,4 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 BUNDLED WITH
-   2.1.4
+   2.2.0
