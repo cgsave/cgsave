@@ -2,6 +2,7 @@
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div class="text-base leading-6 space-x-1">
       <span class="text-gray-400">&copy; 2020 cgsave, Inc.</span>
+      <% if false %>
       <a href="<%= about_path %>" class="text-gray-500 hover:text-gray-900">
         <%= t("about") %>
       </a>
@@ -9,6 +10,7 @@
       <a href="https://github.com/cgsave/cgsave" target="_blank" class="text-gray-500 hover:text-gray-900">
         <%= t("open_source") %>
       </a>
+      <% end %>
     </div>
   </div>
 </footer>
