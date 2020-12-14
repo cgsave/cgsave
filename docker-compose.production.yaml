@@ -36,10 +36,10 @@ services:
     volumes:
       - /data/postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=cgsave
       - POSTGRES_USER=postgres
       # Please provide your own password.
-      - POSTGRES_PASSWORD=huanggaoqiubd0829
+      - POSTGRES_PASSWORD=cgsavedbpasswd
 
   redis:
     image: redis:alpine

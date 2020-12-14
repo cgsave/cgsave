@@ -46,9 +46,9 @@ services:
     volumes:
       - postgres:/data/postgres
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=cgsave_test
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=huanggaoqiubd0829
+      - POSTGRES_PASSWORD=cgsavedbpasswd
 
   redis:
     image: redis:alpine
