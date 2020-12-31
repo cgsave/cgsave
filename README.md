@@ -27,7 +27,8 @@ cgsave is the open source software which powers [cgsave.com](https://cgsave.com)
 
 ## Deployment
 
-* Nginx conf sync: bundle exec cap production puma:nginx_config
+* Nginx conf sync: bundle exec cap production puma:nginx_config 
+* sidekiq install: bundle exec cap production sidekiq:install
 * Deploy: bundle exec cap production deploy
 
 

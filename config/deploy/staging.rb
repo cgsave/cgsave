@@ -7,7 +7,7 @@
 set :rails_env, :production
 set :migrate_env, :production
 set :sitemap_roles, :web
-server "cgsave.com", user: "ubuntu", roles: %w{app db web}
+server "cgsave.com", user: "deploy", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
@@ -34,8 +34,7 @@ server "cgsave.com", user: "ubuntu", roles: %w{app db web}
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
-
+#
 
 # Custom SSH Options
 # ==================
@@ -53,13 +52,15 @@ server "cgsave.com", user: "ubuntu", roles: %w{app db web}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server "example.com",
-#   user: "user_name",
-#   roles: %w{web app},
+# server "cgsave.com",
+#   user: "deploy",
+#   roles: %w{app, db, web},
 #   ssh_options: {
 #     user: "user_name", # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
+#     keys: %w(/home/godfrey/.ssh/id_rsa),
+#     # port: 3716,
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
