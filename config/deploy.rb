@@ -7,8 +7,8 @@ set :application, "cgsave"
 set :repo_url, "https://github.com/cgsave/cgsave.git"
 
 set :assets_roles, [:app]
-set :tmp_dir, '/home/deploy/tmp/capistrano'
-set :pty, true
+# set :tmp_dir, '/home/deploy/tmp/capistrano'
+# set :pty, true
 # Default branch is :master
 #ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :branch, 'dev' #fetch(:stage)
