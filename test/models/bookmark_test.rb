@@ -15,9 +15,12 @@
 #  content                       :text
 #  description                   :text
 #  dups_count                    :integer          default(0)
+#  excellented_at                :datetime
+#  excellented_priority          :integer          default(0), not null
 #  favicon                       :string
 #  images                        :string           default([]), is an Array
 #  is_display                    :boolean          default(TRUE), not null
+#  is_excellent                  :boolean          default(FALSE), not null
 #  is_rss                        :boolean          default(FALSE), not null
 #  lang                          :integer          default("english"), not null
 #  likes_count                   :integer          default(0)
