@@ -17,7 +17,6 @@ cgsave is the open source software which powers [cgsave.com](https://cgsave.com)
 * imagemagic
 * redis
 
-
 ## Setup local
 
 * [PG extension install](https://github.com/cgsave/cgsave/blob/master/pg_extension.md)
@@ -25,24 +24,7 @@ cgsave is the open source software which powers [cgsave.com](https://cgsave.com)
 * rails db:migrate
 * rails db:seed_fu
 
-## Deployment
-
-* Nginx conf sync: bundle exec cap production puma:nginx_config 
-* sidekiq install: bundle exec cap production sidekiq:install
-* Deploy: bundle exec cap production deploy
-
-
-## chrome extension
-
-* https://github.com/cgsave/cgsave-ext
-* https://chrome.google.com/webstore/detail/cgsave/pinmchdpdbjbhijbagmealcojjpeebmh
-
-## refresh sitemap
-
-* bundle exec rake sitemap:refresh
-
-
-## Docker install
+## Setup by Docker
 
 1. Make a copy of the example environment file and modify as required [optional].
 
@@ -80,3 +62,17 @@ docker-compose up
 ```
 docker-compose down
 ```
+
+## Deployment
+
+* Nginx conf sync: bundle exec cap production puma:nginx_config
+* Deploy: bundle exec cap production deploy
+
+## chrome extension
+
+* https://github.com/hackershare/hackershare-ext
+* https://chrome.google.com/webstore/detail/hackershare/pinmchdpdbjbhijbagmealcojjpeebmh
+
+## refresh sitemap
+
+* bundle exec rake sitemap:refresh

@@ -15,9 +15,16 @@ class RssRobotJob < ApplicationJob
       processed_at = Time.current
       res = http.get(rss_source.url)
       feed = Feedjira.parse(res.to_s)
-      if rss_source.processed_at && feed.try(:last_built) && rss_source.processed_at > feed.last_built
-        rss_source.touch(:processed_at, time: processed_at)
-        return
+      if rss_source.processed_at && feed.try(:last_built)
+        last_built_date = \
+          if feed.last_built.is_a?(String)
+            Time.zone.parse(feed.last_built).to_date
+          else
+            feed.last_built.to_date
+          end
+        if rss_source.processed_at.to_date > last_built_date
+          return
+        end
       end
       init_rss_source_tag!(rss_source)
       smart_published_at_array = \
@@ -32,6 +39,7 @@ class RssRobotJob < ApplicationJob
         title = entry.title&.force_encoding("utf-8")
         description = (entry.content || entry.summary)&.force_encoding("utf-8")
         lang = [title, description].any? { |text| text.to_s.match?(/\p{Han}/) } ? :chinese : :english
+        created_at = smart_published_at_array[index] || [entry.published, Time.current].min
         bookmark = User.rss_robot.bookmarks.new(
           is_rss:      true,
           is_display:  rss_source.is_display,
@@ -39,7 +47,7 @@ class RssRobotJob < ApplicationJob
           title:       title,
           description: entry.summary&.force_encoding("utf-8"),
           content: description,
-          created_at:  (smart_published_at_array[index] || fix_future_time(entry.published)),
+          created_at:  created_at,
           lang:        lang,
         )
         if bookmark.save
@@ -72,14 +80,6 @@ class RssRobotJob < ApplicationJob
       between_time = Time.current - start_time
       order_range = size.times.map { rand }.sort
       order_range.map { |range| start_time + between_time * range }
-    end
-
-    def fix_future_time(time)
-      if time >= Time.now
-        time - 1.day
-      else
-        time
-      end
     end
 
     def http
